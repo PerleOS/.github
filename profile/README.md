@@ -5,16 +5,16 @@
   </picture>
 </p>
 
-PerleOS is a free Android distribution based on [LineageOS](https://lineageos.org) 21 (Android 14) for the Lenovo Tab P11 Pro **TB-J706F** (Wi-Fi). It keeps the device's stock vendor firmware, runs a kernel built from source, and ships [microG](https://microg.org) instead of Google services.
+PerleOS is a free Android distribution based on [LineageOS](https://lineageos.org) 24 (Android 17) for the Lenovo Tab P11 Pro **TB-J706F** (Wi-Fi). It builds its kernel from source and its vendor image from the stock firmware's proprietary files, and ships [microG](https://microg.org) instead of Google services.
 
 PerleOS is an independent project. It is not affiliated with, endorsed by or sponsored by Lenovo, Google or the LineageOS project. Product names are used only to identify compatible hardware.
 
 ### What it adds to LineageOS
 
 - **microG** and F-Droid, with signature spoofing limited to microG on `user` builds
-- **Kernel from source**, built with the ROM, and BPF fixes that let Android 14 run on the 4.14 kernel
+- **Kernel from source**, built with the ROM, with the BPF backports that let Android 17 run on the 4.14 kernel
 - **Device support**: speakers that follow the screen rotation, power-button fingerprint sensor, keyboard pack and pen
-- **Its own look**: boot animation, wallpaper and Space Grotesk as the system font, with Roboto available in Wallpaper & style
+- **Its own look**: boot animation and wallpaper
 
 ### Devices
 
@@ -29,13 +29,13 @@ Other Tab P11 models use different hardware and are not supported.
 
 | Repository | Content |
 |---|---|
-| [`local_manifests`](https://github.com/PerleOS/local_manifests) | Start here: adds PerleOS to a LineageOS 21 checkout |
+| [`local_manifests`](https://github.com/PerleOS/local_manifests) | Start here: adds PerleOS to a LineageOS 24 checkout |
 | [`android_device_lenovo_pearl-common`](https://github.com/PerleOS/android_device_lenovo_pearl-common), [`android_device_lenovo_j706f`](https://github.com/PerleOS/android_device_lenovo_j706f) | Device trees |
 | [`android_kernel_lenovo_sm6150`](https://github.com/PerleOS/android_kernel_lenovo_sm6150) | Kernel source |
 | [`android_vendor_perleos`](https://github.com/PerleOS/android_vendor_perleos) | Product configuration and branding |
 | [`android_vendor_microg`](https://github.com/PerleOS/android_vendor_microg) | microG and F-Droid prebuilts |
 
-The other repositories are forks of LineageOS projects with small changes; [`local_manifests`](https://github.com/PerleOS/local_manifests#contents) lists each one and why it exists.
+The other repositories are forks of LineageOS projects with small changes; [`local_manifests`](https://github.com/PerleOS/local_manifests#contents) lists each one and why it exists. The `lineage-21.0` branches (Android 14) are kept but no longer the default.
 
 ### Warning
 
